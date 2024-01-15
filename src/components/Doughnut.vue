@@ -1,20 +1,7 @@
 <template>
  <b-container class="bv-example-row mt-3">
     <b-row>
-      <b-col>
-         <Doughnut
-            :chart-options="chartOptions"
-            :chart-data="chartData"
-            :chart-id="chartId"
-            :dataset-id-key="datasetIdKey"
-            :plugins="plugins"
-            :css-classes="cssClasses"
-            :styles="styles"
-            :width="width"
-            :height="height"
-          />
-      </b-col>
-
+      
       <b-col>
         <b-row>
           <b-col>
@@ -56,6 +43,20 @@
         </b-row>
         <TableComponent/>
       </b-col>
+
+      <b-col>
+         <Doughnut
+            :chart-options="chartOptions"
+            :chart-data="chartData"
+            :chart-id="chartId"
+            :dataset-id-key="datasetIdKey"
+            :plugins="plugins"
+            :css-classes="cssClasses"
+            :styles="styles"
+            :width="width"
+            :height="height"
+          />
+      </b-col>
     </b-row>
 
   </b-container>
@@ -63,8 +64,8 @@
 </template>
 
 <script>
+import TableComponent from '../components/Tables.vue';  
 import { Doughnut } from 'vue-chartjs/legacy'
-import TableComponent from '../components/Tables.vue';
 
 import {
   Chart as ChartJS,
@@ -98,7 +99,7 @@ export default {
     },
     height: {
       type: Number,
-      default: 400
+      default: 350
     },
     cssClasses: {
       default: '',
@@ -149,7 +150,7 @@ export default {
           labels: [],
           datasets: [
             {
-              backgroundColor: ['#41B883', '#E46651', '#00D8FF'],
+              backgroundColor: ['#B8860B','#42afee', '#9932CC', '#F0E68C', '#006400', '#FF69B4', '#000080'],
               data: []
             }
           ]

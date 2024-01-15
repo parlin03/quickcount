@@ -3,7 +3,7 @@
     <b-navbar toggleable="lg" type="light" variant="info">
       <b-container>
         <b-navbar-brand href="#"
-          >Quick Count Pilkades 2022 : Desa Pawenang  | <b-badge variant="info" style="font-size:large">{{timestamp}}</b-badge>
+          >Quick Count 2024 : Pemilihan Calon Legislatif Makassar B Dapil II Sulsel  | <b-badge variant="info" style="font-size:large">{{timestamp}}</b-badge>
           </b-navbar-brand
         >
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -29,7 +29,7 @@ export default {
     getNow() {
       const today = new Date();
       const date =
-        today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear();
+        today.getDate() + "/" + (today.getMonth()+1) + "/" + today.getFullYear();
         
       const time =
         today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();

@@ -23,11 +23,15 @@ export default ({
         hasil.forEach((value) => {
 
             var data={
-              nama_tps:value.nama_tps,
+              kecamatan:value.namakec,
               jml_dtp:value.jml_dtp,
-              paslon_1:value.jml_suara_paslon1,
-              paslon_2:value.jml_suara_paslon2,
-              paslon_3:value.jml_suara_paslon3,
+              suara_partai:value.jml_suara_paslon0,
+              caleg_1:value.jml_suara_paslon1,
+              caleg_2:value.jml_suara_paslon2,
+              caleg_3:value.jml_suara_paslon3,
+              caleg_4:value.jml_suara_paslon4,
+              caleg_5:value.jml_suara_paslon5,
+              caleg_6:value.jml_suara_paslon6,
               jml_rusak:value.jml_rusak,
               jml_suara:value.jml_suara,
             }
