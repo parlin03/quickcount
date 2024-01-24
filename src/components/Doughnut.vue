@@ -30,12 +30,13 @@
            </b-col>
            <b-col>
               <b-card
-                title="Tidak Sah"
+                title="Persentase"
                 style="max-width: 20rem; text-align: center;"
                 class="mb-2"
               >
                 <b-card-text>
-                  <h3>{{total_rusak}}</h3>
+                  <!-- <h3>{{total_rusak}}</h3> -->
+                  <h3>{{total_percent}} %</h3>
                 </b-card-text>
 
               </b-card>
@@ -134,9 +135,10 @@ export default {
       return this.$http.get(baseURI).then((response) => {
         const hasil = response.data.hasil;
         this.total_dtp=hasil.total_dtp;
-        this.total_rusak=hasil.total_rusak;
-        this.total_suara=hasil.total_suara
-        
+        // this.total_rusak=hasil.total_rusak;
+        this.total_suara=hasil.total_suara;
+        const pc=((hasil.total_suara/hasil.total_dtp)*100)
+        this.total_percent =pc.toFixed(2)
       });
     },
 
