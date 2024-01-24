@@ -2,7 +2,7 @@
 
 
 <div class="footer">
-  <b-container class="mt-2">
+  <b-container class="mt-1">
      <b-row>
               <!-- v-for="(a, index) of  featchCalon"
         :key="index" -->
@@ -17,7 +17,7 @@
 <style>
 .footer {
   position: fixed;
-  height: 80px;
+  height: 40px;
   left: 0;
   bottom: 0;
   width: 100%;

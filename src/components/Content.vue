@@ -56,7 +56,7 @@
       <b-col>
         <b-card
           
-          img-src="calon2.jpg"
+          img-src="calon2.jpeg"
           img-alt="Image"
           img-top
   
@@ -82,7 +82,7 @@
 
       <b-col>
         <b-card
-          img-src="calon3.png"
+          img-src="calon3.jpeg"
           img-alt="Image"
           img-top
   
@@ -108,7 +108,7 @@
 
       <b-col>
         <b-card
-          img-src="calon4.png"
+          img-src="calon4.jpeg"
           img-alt="Image"
           img-top
   
@@ -134,7 +134,7 @@
 
       <b-col>
         <b-card
-          img-src="calon5.jpg"
+          img-src="calon5.jpeg"
           img-alt="Image"
           img-top
   
@@ -160,7 +160,7 @@
 
       <b-col>
         <b-card
-          img-src="calon6.png"
+          img-src="calon6.jpeg"
           img-alt="Image"
           img-top
   

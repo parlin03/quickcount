@@ -1,5 +1,5 @@
 <template>
-     <b-table striped hover :items="items"></b-table>
+     <b-table style="max-width: 20rem; text-align: right;" striped hover :items="items"></b-table>
 </template>
 
 <script>
@@ -24,16 +24,16 @@ export default ({
 
             var data={
               kecamatan:value.namakec,
-              jml_dtp:value.jml_dtp,
+              total_dpt:value.jml_dpt,
               suara_partai:value.jml_suara_paslon0,
-              caleg_1:value.jml_suara_paslon1,
-              caleg_2:value.jml_suara_paslon2,
-              caleg_3:value.jml_suara_paslon3,
-              caleg_4:value.jml_suara_paslon4,
-              caleg_5:value.jml_suara_paslon5,
-              caleg_6:value.jml_suara_paslon6,
-              jml_rusak:value.jml_rusak,
-              jml_suara:value.jml_suara,
+              no_urut_1:value.jml_suara_paslon1,
+              no_urut_2:value.jml_suara_paslon2,
+              no_urut_3:value.jml_suara_paslon3,
+              no_urut_4:value.jml_suara_paslon4,
+              no_urut_5:value.jml_suara_paslon5,
+              no_urut_6:value.jml_suara_paslon6,
+              tidak_sah:value.jml_rusak,
+              jumlah_suara:value.jml_suara,
             }
 
            
