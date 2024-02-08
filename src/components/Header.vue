@@ -1,15 +1,28 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="light" variant="info">
+    <b-navbar type="light" variant="info" >
       <b-container>
-        <b-navbar-brand href="#"
-          >Quick Count 2024 : Pemilihan Calon Legislatif Makassar B Dapil II Sulsel  | <b-badge variant="info" style="font-size:large">{{timestamp}}</b-badge>
+        <b-navbar-brand href="#" style="text-align: center;"
+          >
+          
+            <b-badge variant="info" style="font-size:large"><H4>{{datestamp}}<br>{{timestamp}}</H4></b-badge>
+
+          
           </b-navbar-brand
         >
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-collapse id="nav-collapse" is-nav>
+        <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle> -->
+        <b-collapse id="nav-collapse" is-nav class="d-flex justify-content-center">
+      
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto"> </b-navbar-nav>
+          <b-navbar-nav class="ml-auto" style="text-align: center;"> 
+          <h3>
+            Pemilihan Calon Legislatif 2024 
+          
+          
+          <br>
+          Makassar B Dapil II Sulsel</h3>
+          </b-navbar-nav>
+      
         </b-collapse>
       </b-container>
     </b-navbar>
@@ -19,6 +32,7 @@
 export default {
   data() {
     return {
+      datestamp: "",
       timestamp: ""
     };
   },
@@ -39,8 +53,9 @@ export default {
         
       const time =
       getHours + ":" + getMinutes + ":" + getSeconds;
-      const dateTime = date + " " + time;
-      this.timestamp = dateTime;
+      // const dateTime = date + " " + time;
+      this.datestamp = date;
+      this.timestamp = time;
     },
   },
 };
