@@ -16,11 +16,11 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto" style="text-align: center;"> 
           <h3>
-            Pemilihan Calon Legislatif 2024 
+          Calon Legislatif DPRD 2024 
           
           
           <br>
-          Makassar B Dapil II Sulsel</h3>
+          Dapil Sulsel II (Makassar B)</h3>
           </b-navbar-nav>
       
         </b-collapse>
