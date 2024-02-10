@@ -2,50 +2,55 @@
  <b-container class="bv-example-row mt-3">
     <b-row>
       
-      <b-col>
-        <b-row>
+      <b-col cols="12" md="8">
+        <b-row >
           <b-col>
+            <div >
             <b-card
-                title="Total DPT"
                 style="max-width: 20rem; text-align: center;"
                 class="mb-2"
-              >
-                <b-card-text>
-                  <h3>{{total_dtp}}</h3>
+              >   
+                <b-card-title style="font-size: 12px;">Total DPT</b-card-title>
+
+                <b-card-text >
+                  <h5>{{total_dtp}}</h5>
                 </b-card-text>
 
               </b-card>
+            </div>
           </b-col>
-           <b-col>
+          <b-col>
               <b-card
-                title="Suara Masuk"
-                style="max-width: 20rem; text-align: center;"
+                style="max-width: 20rem; text-align: center; "
                 class="mb-2"
               >
+                <b-card-title style="font-size: 12px;">Suara Masuk</b-card-title>
                 <b-card-text>
-                  <h3>{{total_suara}}</h3>
+                  <h5>{{total_suara}}</h5>
                 </b-card-text>
 
               </b-card>
            </b-col>
            <b-col>
               <b-card
-                title="Persentase"
                 style="max-width: 20rem; text-align: center;"
-                class="mb-2"
+                class="mb-1"
               >
+                <b-card-title style="font-size: 12px;">Persentase</b-card-title>
                 <b-card-text>
-                  <!-- <h3>{{total_rusak}}</h3> -->
-                  <h3>{{total_percent}} %</h3>
+                  <!-- <h5>{{total_rusak}}</h5> -->
+                  <h5>{{total_percent}} %</h5>
                 </b-card-text>
 
               </b-card>
            </b-col>
         </b-row>
-        <TableComponent/>
+        <b-row>
+          <TableComponent/>
+        </b-row>
       </b-col>
 
-      <b-col>
+      <b-col cols="6" md="4" style="font-size: 0.5rem;">
          <Doughnut
             :chart-options="chartOptions"
             :chart-data="chartData"
@@ -56,6 +61,7 @@
             :styles="styles"
             :width="width"
             :height="height"
+            :scales="scales"
           />
       </b-col>
     </b-row>
@@ -78,6 +84,7 @@ import {
 } from 'chart.js'
 
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale)
+ChartJS.defaults.font.size = 6
 
 export default {
   name: 'DoughnutChart',
@@ -100,7 +107,7 @@ export default {
     },
     height: {
       type: Number,
-      default: 350
+      default: 220
     },
     cssClasses: {
       default: '',
@@ -113,6 +120,12 @@ export default {
     plugins: {
       type: Array,
       default: () => []
+    },
+    scales: {
+           x: {
+               display: true,
+               size: 30
+           }
     }
   },
   data() {

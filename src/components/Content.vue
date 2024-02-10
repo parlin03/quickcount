@@ -1,26 +1,26 @@
 <template>
-  <b-container class="bv-example-row mt-3">
-    <b-row>
+  <b-container class="bv-example-row bv-example-row-flex-cols mt-3">
+    <b-row class="fluid">
       <b-col>
         <b-card
           img-src="calon0.jpg"
           img-alt="Image"
           img-top
-  
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
           <b-row>
-            <b-col><h4>{{jml_suara0}} Suara</h4></b-col>
+              <b-col style="font-size: 0.6rem; font-weight: bold;">{{jml_suara0}} Suara</b-col>
           </b-row>
           <b-row>
-            <b-col style="background-color: #B8860B; color: white">
-              <h4>{{persen0}} %</h4>
+              <b-col style="background-color: #B8860B; color: white">
+              {{persen0}} %
             </b-col>
           </b-row>
-          <b-row>
-            <b-col><hr><h8>{{nama_calon0}}</h8></b-col>
+          <b-row class="mt-3">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon0}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -34,19 +34,19 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
           <b-card-text>
             <b-row>
-              <b-col><h4>{{jml_suara1}} Suara</h4></b-col>
+              <b-col style="font-size: 0.7rem; font-weight: bold;">{{jml_suara1}} Suara</b-col>
             </b-row>
             <b-row>
-              <b-col style="background-color: #42afee; color: white"><h4>{{persen1}} %</h4>
+              <b-col style="background-color: #42afee; color: white">{{persen1}} %
               </b-col>
             </b-row>
-            <b-row>
-              <b-col><hr><h9>{{nama_calon1}}</h9></b-col>
+            <b-row class="mt-1">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon1}}</b-col>
             </b-row>
           </b-card-text>
         </b-card>
@@ -60,20 +60,20 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
             <b-row>
-              <b-col><h4>{{jml_suara2}} Suara</h4></b-col>
+              <b-col style="font-size: 0.7rem; font-weight: bold;">{{jml_suara2}} Suara</b-col>
             </b-row>
             <b-row>
               <b-col style="background-color: #9932CC; color: white">
-                <h4>{{persen2}} %</h4>
+                {{persen2}} %
               </b-col>
             </b-row>
-            <b-row>
-              <b-col><hr><h8>{{nama_calon2}}</h8></b-col>
+            <b-row class="mt-2">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon2}}</b-col>
             </b-row>
           </b-card-text>
         </b-card>
@@ -86,20 +86,20 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
           <b-row>
-            <b-col><h4>{{jml_suara3}} Suara</h4></b-col>
+              <b-col style="font-size: 0.7rem; font-weight: bold;">{{jml_suara3}} Suara</b-col>
           </b-row>
           <b-row>
-            <b-col style="background-color: #F0E68C; color: white">
-              <h4>{{persen3}} %</h4>
+              <b-col style="background-color: #F0E68C; color: white">
+              {{persen3}} %
             </b-col>
           </b-row>
-          <b-row>
-            <b-col><hr><h8>{{nama_calon3}}</h8></b-col>
+          <b-row class="mt-2">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon3}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -112,20 +112,20 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
           <b-row>
-            <b-col><h4>{{jml_suara4}} Suara</h4></b-col>
+              <b-col style="font-size: 0.7rem; font-weight: bold;">{{jml_suara4}} Suara</b-col>
           </b-row>
           <b-row>
-            <b-col style="background-color: #006400; color: white">
-              <h4>{{persen4}} %</h4>
+              <b-col style="background-color: #006400; color: white">
+              {{persen4}} %
             </b-col>
           </b-row>
-          <b-row>
-            <b-col><hr><h8>{{nama_calon4}}</h8></b-col>
+          <b-row class="mt-3">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon4}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -138,20 +138,20 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
           <b-row>
-            <b-col><h4>{{jml_suara5}} Suara</h4></b-col>
+              <b-col style="font-size: 0.7rem; font-weight: bold;">{{jml_suara5}} Suara</b-col>
           </b-row>
           <b-row>
-            <b-col style="background-color: #FF69B4; color: white">
-              <h4>{{persen5}} %</h4>
+              <b-col style="background-color: #FF69B4; color: white">
+              {{persen5}} %
             </b-col>
           </b-row>
-          <b-row>
-            <b-col><hr><h8>{{nama_calon5}}</h8></b-col>
+          <b-row class="mt-2">
+              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon5}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -164,20 +164,20 @@
           img-alt="Image"
           img-top
   
-          style="width: 10rem; height: 26rem; text-align: center"
-          class="mb-2"
+          style="width: 6rem; height: 14rem; text-align: center"
+          class="mb-0"
         >
         <b-card-text>
           <b-row>
-            <b-col><h4>{{jml_suara6}} Suara</h4></b-col>
+            <b-col  style="font-size: 0.7rem; font-weight: bold;">{{jml_suara6}} Suara</b-col>
           </b-row>
           <b-row>
-            <b-col style="background-color: #000080; color: white">
-              <h4>{{persen6}} %</h4>
+              <b-col style="background-color: #000080; color: white">
+              {{persen6}} %
             </b-col>
           </b-row>
-          <b-row>
-            <b-col><hr><h8>{{nama_calon6}}</h8></b-col>
+          <b-row class="mt-2">
+            <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon6}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>

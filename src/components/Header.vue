@@ -5,7 +5,7 @@
         <b-navbar-brand href="#" style="text-align: center;"
           >
           
-            <b-badge variant="info" style="font-size:large"><H4>{{datestamp}}<br>{{timestamp}}</H4></b-badge>
+            <b-badge variant="info" style="font-size:1rem">{{datestamp}}<br>{{timestamp}}</b-badge>
 
           
           </b-navbar-brand
@@ -14,13 +14,13 @@
         <b-collapse id="nav-collapse" is-nav class="d-flex justify-content-center">
       
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto" style="text-align: center;"> 
-          <h3>
+          <b-navbar-nav class="ml-auto" style="text-align: center; font-weight: 600;"> 
+          
           Calon Legislatif DPRD 2024 
           
           
           <br>
-          Dapil Sulsel II (Makassar B)</h3>
+          Dapil Sulsel II (Makassar B)
           </b-navbar-nav>
       
         </b-collapse>

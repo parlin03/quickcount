@@ -1,5 +1,7 @@
 <template>
-     <b-table style="max-width: 20rem; text-align: right;" striped hover :items="items"></b-table>
+  <div style="font-size: 0.45rem;">
+    <b-table style="max-width: 100%; text-align: right; " striped hover :items="items"></b-table>
+  </div>
 </template>
 
 <script>
