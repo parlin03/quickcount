@@ -1,81 +1,60 @@
 <template>
   <b-container class="bv-example-row bv-example-row-flex-cols mt-3">
-    <b-row class="fluid">
+    <b-row class="fluid col-md-12" >
       <b-col>
         <b-card
           img-src="calon0.jpg"
           img-alt="Image"
           img-top
-
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #B8860B; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara0}}</h4>
+        </template>
         <b-card-text>
-          <b-row>
-              <b-col style="background-color: #B8860B; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara0}}</b-col>
-          </b-row>
-          <!-- <b-row>
-              <b-col style="background-color: #B8860B; color: white">
-              {{persen0}} %
-            </b-col>
-          </b-row> -->
           <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon0}}</b-col>
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon0}}</div>
           </b-row>
         </b-card-text>
         </b-card>
       </b-col>
 
-
       <b-col>
         <b-card
-          
           img-src="calon1.jpg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
-          <b-card-text>
-            <b-row>
-              <b-col style="background-color: #42afee; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara1}}</b-col>
-            </b-row>
-            <!-- <b-row>
-              <b-col style="background-color: #42afee; color: white">{{persen1}} %
-              </b-col>
-            </b-row> -->
-            <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon1}}</b-col>
-            </b-row>
-          </b-card-text>
+        <template>
+          <h4 class="mb-0" style="background-color: #42afee; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara1}}</h4>
+        </template>
+        <b-card-text>
+          <b-row class="mt-1">
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon1}}</div>
+          </b-row>
+        </b-card-text>
         </b-card>
       </b-col>
-
-
+     
       <b-col>
         <b-card
-          
           img-src="calon2.jpeg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #9932CC; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara2}}</h4>
+        </template>
         <b-card-text>
-            <b-row>
-              <b-col style="background-color: #9932CC; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara2}}</b-col>
-            </b-row>
-            <!-- <b-row>
-              <b-col style="background-color: #9932CC; color: white">
-                {{persen2}} %
-              </b-col>
-            </b-row> -->
-            <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon2}}</b-col>
-            </b-row>
-          </b-card-text>
+          <b-row class="mt-1">
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon2}}</div>
+          </b-row>
+        </b-card-text>
         </b-card>
       </b-col>
 
@@ -85,21 +64,15 @@
           img-src="calon3.jpeg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #F0E68C; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara3}}</h4>
+        </template>
         <b-card-text>
-          <b-row>
-              <b-col style="background-color: #F0E68C; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara3}}</b-col>
-          </b-row>
-          <!-- <b-row>
-              <b-col style="background-color: #F0E68C; color: white">
-              {{persen3}} %
-            </b-col>
-          </b-row> -->
           <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon3}}</b-col>
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon3}}</div>
           </b-row>
         </b-card-text>
         </b-card>
@@ -111,21 +84,15 @@
           img-src="calon4.jpeg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #006400; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara4}}</h4>
+        </template>
         <b-card-text>
-          <b-row>
-              <b-col style="background-color: #006400; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara4}}</b-col>
-          </b-row>
-          <!-- <b-row>
-              <b-col style="background-color: #006400; color: white">
-              {{persen4}} %
-            </b-col>
-          </b-row> -->
           <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon4}}</b-col>
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon4}}</div>
           </b-row>
         </b-card-text>
         </b-card>
@@ -137,52 +104,38 @@
           img-src="calon5.jpeg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #FF69B4; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara5}}</h4>
+        </template>
         <b-card-text>
-          <b-row>
-              <b-col style="background-color: #FF69B4; color: white; font-size: 1rem; font-weight: bold;">{{jml_suara5}}</b-col>
-          </b-row>
-          <!-- <b-row>
-              <b-col style="background-color: #FF69B4; color: white">
-              {{persen5}} %
-            </b-col>
-          </b-row> -->
           <b-row class="mt-1">
-              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon5}}</b-col>
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon5}}</div>
           </b-row>
         </b-card-text>
         </b-card>
       </b-col>
-
 
       <b-col>
         <b-card
           img-src="calon6.jpeg"
           img-alt="Image"
           img-top
-  
-          style="width: 6rem; height: 13rem; text-align: center"
-          class="mb-0"
+          style="text-align: center"
+          no-body
         >
+        <template>
+          <h4 class="mb-0" style="background-color: #000080; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara6}}</h4>
+        </template>
         <b-card-text>
-          <b-row>
-            <b-col  style="background-color: #000080; color: white;font-size: 1rem; font-weight: bold;">{{jml_suara6}}</b-col>
-          </b-row>
-          <!-- <b-row>
-              <b-col style="background-color: #000080; color: white">
-              {{persen6}} %
-            </b-col>
-          </b-row> -->
           <b-row class="mt-1">
-            <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon6}}</b-col>
+              <div style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon6}}</div>
           </b-row>
         </b-card-text>
         </b-card>
       </b-col>
-      
     </b-row>
   </b-container>
 </template>
@@ -194,8 +147,7 @@ export default {
     return {
       publicPath: process.env.BASE_URL,
       featchCalon: [],
-      total_dtp:"",
-      total_rusak:"",
+      total_dpt:"",
       total_suara:"",
       jml_suara0:"",
       jml_suara1:"",
@@ -260,9 +212,12 @@ export default {
 
       return this.$http.get(baseURI).then((response) => {
         const hasil = response.data.hasil;
-        this.total_dtp=hasil.total_dtp;
-        this.total_rusak=hasil.total_rusak;
-        this.total_suara=hasil.total_suara
+        this.total_dpt=hasil.total_dpt;
+        this.total_suara=hasil.total_suara;
+        this.total_tps=hasil.total_tps;
+        this.tps_masuk=hasil.tps_masuk;
+        const pc=((hasil.tps_masuk/hasil.total_tps)*100)
+        this.total_percent =pc.toFixed(1)
         
       });
     },
