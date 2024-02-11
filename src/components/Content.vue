@@ -19,8 +19,8 @@
               {{persen0}} %
             </b-col>
           </b-row> -->
-          <b-row class="mt-3">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon0}}</b-col>
+          <b-row class="mt-1">
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon0}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -46,7 +46,7 @@
               </b-col>
             </b-row> -->
             <b-row class="mt-1">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon1}}</b-col>
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon1}}</b-col>
             </b-row>
           </b-card-text>
         </b-card>
@@ -72,8 +72,8 @@
                 {{persen2}} %
               </b-col>
             </b-row> -->
-            <b-row class="mt-2">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon2}}</b-col>
+            <b-row class="mt-1">
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon2}}</b-col>
             </b-row>
           </b-card-text>
         </b-card>
@@ -98,8 +98,8 @@
               {{persen3}} %
             </b-col>
           </b-row> -->
-          <b-row class="mt-2">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon3}}</b-col>
+          <b-row class="mt-1">
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon3}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -124,8 +124,8 @@
               {{persen4}} %
             </b-col>
           </b-row> -->
-          <b-row class="mt-3">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon4}}</b-col>
+          <b-row class="mt-1">
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon4}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -150,8 +150,8 @@
               {{persen5}} %
             </b-col>
           </b-row> -->
-          <b-row class="mt-2">
-              <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon5}}</b-col>
+          <b-row class="mt-1">
+              <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon5}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
@@ -176,8 +176,8 @@
               {{persen6}} %
             </b-col>
           </b-row> -->
-          <b-row class="mt-2">
-            <b-col style="font-size: 0.4rem; font-weight: bolder;">{{nama_calon6}}</b-col>
+          <b-row class="mt-1">
+            <b-col style="font-size: 0.35rem; font-weight: bolder;">{{nama_calon6}}</b-col>
           </b-row>
         </b-card-text>
         </b-card>
