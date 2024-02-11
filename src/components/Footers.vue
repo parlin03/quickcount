@@ -6,8 +6,8 @@
      <b-row>
               <!-- v-for="(a, index) of  featchCalon"
         :key="index" -->
-        <b-col cols="2" md="auto"><h5>Pengumuman:</h5></b-col>
-        <b-col cols="10"><h5><marquee > <span v-for="(a, index) of  items" :key="index">{{a.keterangan}} | </span></marquee>  </h5>
+        <b-col cols="2" md="auto"><h6>Info TPS :</h6></b-col>
+        <b-col cols="10"><h6><marquee > <span v-for="(a, index) of  items" :key="index">{{a.namakec}} {{a.tps_masuk}}/{{a.total_tps}} ({{((a.tps_masuk/a.total_tps)*100).toFixed(2)}}%)  </span></marquee>  </h6>
       </b-col>
     </b-row>
   </b-container>
@@ -17,7 +17,7 @@
 <style>
 .footer {
   position: fixed;
-  height: 40px;
+  height: 25px;
   left: 0;
   bottom: 0;
   width: 100%;

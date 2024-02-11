@@ -13,7 +13,7 @@
                 <b-card-title style="font-size: 12px;">Total DPT</b-card-title>
 
                 <b-card-text >
-                  <h5>{{total_dtp}}</h5>
+                  <h5>{{total_dpt}}</h5>
                 </b-card-text>
 
               </b-card>
@@ -36,10 +36,23 @@
                 style="max-width: 20rem; text-align: center;"
                 class="mb-1"
               >
-                <b-card-title style="font-size: 12px;">Persentase</b-card-title>
+                <b-card-title style="font-size: 12px;">Total TPS</b-card-title>
                 <b-card-text>
                   <!-- <h5>{{total_rusak}}</h5> -->
-                  <h5>{{total_percent}} %</h5>
+                  <h5>{{total_tps}} </h5>
+                </b-card-text>
+
+              </b-card>
+           </b-col>
+           <b-col>
+              <b-card
+                style="max-width: 20rem; text-align: center;"
+                class="mb-1"
+              >
+                <b-card-title style="font-size: 12px;">TPS Masuk</b-card-title>
+                <b-card-text>
+                  <!-- <h5>{{total_rusak}}</h5> -->
+                  <h5>{{tps_masuk}} <span  style="color:blue;font-size: 0.9rem">({{ total_percent }}%)</span></h5>
                 </b-card-text>
 
               </b-card>
@@ -130,9 +143,11 @@ export default {
   },
   data() {
     return {
-      total_dtp:"",
-      total_rusak:"",
+      total_dpt:"",
+      total_tps:"",
       total_suara:"",
+      tps_masuk:"",
+      total_percent:"",
       chartData:[],
       chartOptions: {
         responsive: true,
@@ -147,11 +162,12 @@ export default {
 
       return this.$http.get(baseURI).then((response) => {
         const hasil = response.data.hasil;
-        this.total_dtp=hasil.total_dtp;
-        // this.total_rusak=hasil.total_rusak;
+        this.total_dpt=hasil.total_dpt;
         this.total_suara=hasil.total_suara;
-        const pc=((hasil.total_suara/hasil.total_dtp)*100)
-        this.total_percent =pc.toFixed(2)
+        this.total_tps=hasil.total_tps;
+        this.tps_masuk=hasil.tps_masuk;
+        const pc=((hasil.tps_masuk/hasil.total_tps)*100)
+        this.total_percent =pc.toFixed(1)
       });
     },
 
@@ -173,7 +189,7 @@ export default {
 
         let percent=0;
         hasil.forEach((value) => {
-            percent=(value.jml_suara/this.total_dtp)*100;           
+            percent=(value.jml_suara/this.total_dpt)*100;           
             dataAWal.labels.push(value.nama_calon);
             dataAWal.datasets[0].data.push(percent);
 

@@ -5,16 +5,16 @@
         <b-navbar-brand href="#" style="text-align: center;"
           >
           
-            <b-badge variant="info" style="font-size:1rem">{{datestamp}}<br>{{timestamp}}</b-badge>
+            <b-badge variant="info" style="text-align: center; font-weight: 600; font-size: 0.9rem;">{{datestamp}}<br>{{timestamp}}</b-badge>
 
           
           </b-navbar-brand
         >
         <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle> -->
-        <b-collapse id="nav-collapse" is-nav class="d-flex justify-content-center">
+        <b-collapse id="nav-collapse" is-nav class="d-flex justify-content-center" >
       
           <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto" style="text-align: center; font-weight: 600;"> 
+          <b-navbar-nav class="ml-auto" style="text-align: center; font-weight: 600; font-size: 0.9rem;"> 
           
           Calon Legislatif DPRD 2024 
           
