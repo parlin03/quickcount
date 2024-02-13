@@ -1,5 +1,5 @@
 const settings = {
-    appName: 'QuickCount',
+    appName: 'RealCount',
     endPoint: 'https://api.sonsofadam.org/api/',
     // endPoint: 'http://localhost:8085/api/',
 }
