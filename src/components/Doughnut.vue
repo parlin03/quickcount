@@ -86,6 +86,8 @@
 <script>
 import TableComponent from '../components/Tables.vue';  
 import { Doughnut } from 'vue-chartjs/legacy'
+import ChartJSPluginDatalabels from 'chartjs-plugin-datalabels'
+
 
 import {
   Chart as ChartJS,
@@ -96,7 +98,7 @@ import {
   CategoryScale
 } from 'chart.js'
 
-ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale)
+ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale, ChartJSPluginDatalabels)
 ChartJS.defaults.font.size = 6
 
 export default {
@@ -151,7 +153,17 @@ export default {
       chartData:[],
       chartOptions: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        plugins: {
+          datalabels: {
+            display: true,
+            color: 'white',
+            borderRadius: 3,
+            formatter: (value) => {
+              return value + '%';
+            },
+          },
+        },
       }
     }
   },
@@ -189,7 +201,7 @@ export default {
 
         let percent=0;
         hasil.forEach((value) => {
-            percent=(value.jml_suara/this.total_dpt)*100;           
+            percent=(value.jml_suara*100/this.total_suara).toFixed(1);           
             dataAWal.labels.push(value.nama_calon);
             dataAWal.datasets[0].data.push(percent);
 
