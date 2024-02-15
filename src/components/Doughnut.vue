@@ -4,7 +4,7 @@
       
       <b-col cols="12" md="8">
         <b-row >
-          <b-col>
+          <!-- <b-col>
             <div >
             <b-card
                 style="max-width: 20rem; text-align: center;"
@@ -18,7 +18,7 @@
 
               </b-card>
             </div>
-          </b-col>
+          </b-col> -->
           <b-col>
               <b-card
                 style="max-width: 20rem; text-align: center; "
@@ -44,6 +44,21 @@
 
               </b-card>
            </b-col>
+           <b-col>
+            <div >
+            <b-card
+                style="max-width: 20rem; text-align: center;"
+                class="mb-2"
+              >   
+                <b-card-title style="font-size: 12px;">Sisa TPS</b-card-title>
+
+                <b-card-text >
+                  <h5>{{total_tps-tps_masuk}}</h5>
+                </b-card-text>
+
+              </b-card>
+            </div>
+          </b-col>
            <b-col>
               <b-card
                 style="max-width: 20rem; text-align: center;"
